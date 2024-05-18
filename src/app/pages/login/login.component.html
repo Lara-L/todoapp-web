@@ -1,9 +1,26 @@
 <app-default-login-layout
-    title="Let's get started"
+    title="Let's get started!"
     primaryBtnText="Login Now"
     secondaryBtnText="Signup Now"
 >
     <form [formGroup]="loginForm">
-        
+        <app-primary-input
+            formControlName="email"
+            inputName="email"
+            type="email"
+            label="Email"
+            placeholder="exemplo@email.com"
+        >
+            <img src="/assets/envelope-solid.svg"/>
+        </app-primary-input>
+        <app-primary-input
+            formControlName="password"
+            inputName="password"
+            type="password"
+            label="Your Password"
+        >
+            <img src="/assets/lock-solid.svg"/>
+        </app-primary-input>
+        <span>forgot password?</span>
     </form>
 </app-default-login-layout>
